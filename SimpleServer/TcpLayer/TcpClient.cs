@@ -12,11 +12,18 @@ namespace SimpleServer.TcpLayer
 
         System.Net.Sockets.TcpClient _client;
         NetworkStream _stream;
+        private readonly string _host;
+        private readonly int _port;
+
+        public TcpClient(string host, int port)
+        {
+            _host = host;
+            _port = port;
+        }
+
         public void Start()
         {
-            const string host = "127.0.0.1";
-            const int port = 82;
-            _client = new System.Net.Sockets.TcpClient(host, port);
+            _client = new System.Net.Sockets.TcpClient(_host, _port);
             _stream = _client.GetStream();
         }
 

@@ -16,10 +16,9 @@ namespace SimpleServer.TcpLayer
         public BinServer Server { get; set; }
 
 
-        public TcpServer()
+        public TcpServer(string host, int port)
         {
-            int port = 82;
-            _listener = new TcpListener(IPAddress.Loopback, port);
+            _listener = new TcpListener(IPAddress.Parse(host), port);
         }
 
         public void Start()
