@@ -33,6 +33,9 @@
     <Reference Include="log4net">
       <HintPath>..\packages\log4net.2.0.3\lib\net40-full\log4net.dll</HintPath>
     </Reference>
+    <Reference Include="protobuf-net">
+      <HintPath>..\packages\protobuf-net.2.0.0.668\lib\net40\protobuf-net.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -42,6 +45,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BinLayer\BinClient.cs" />
+    <Compile Include="BinLayer\CommandMapper.cs" />
+    <Compile Include="BinLayer\BinServer.cs" />
     <Compile Include="Client.cs" />
     <Compile Include="DbMock.cs" />
     <Compile Include="DumpExtension.cs" />

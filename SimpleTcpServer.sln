@@ -14,6 +14,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleServer", "SimpleServe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestBusinessLogic", "TestBusinessLogic\TestBusinessLogic.csproj", "{1EF378F5-2A07-4A71-BDC0-9AF3EF3E5FE1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestBinServer", "TestBinServer\TestBinServer.csproj", "{226F7458-BB4A-4B79-88A7-E0194AF6C8C9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -32,6 +34,10 @@ Global
 		{1EF378F5-2A07-4A71-BDC0-9AF3EF3E5FE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1EF378F5-2A07-4A71-BDC0-9AF3EF3E5FE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1EF378F5-2A07-4A71-BDC0-9AF3EF3E5FE1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{226F7458-BB4A-4B79-88A7-E0194AF6C8C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{226F7458-BB4A-4B79-88A7-E0194AF6C8C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{226F7458-BB4A-4B79-88A7-E0194AF6C8C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{226F7458-BB4A-4B79-88A7-E0194AF6C8C9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

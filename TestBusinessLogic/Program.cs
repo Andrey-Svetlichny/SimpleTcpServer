@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using SimpleServer;
 
 namespace TestBusinessLogic
@@ -14,6 +10,8 @@ namespace TestBusinessLogic
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("TestBusinessLogic");
+
             var server = new Server();
             var client = new Client { Server = server };
             client.Start();
