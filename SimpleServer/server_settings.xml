@@ -1,4 +1,4 @@
 ﻿<ServerSettings>
   <add key="host" value="127.0.0.1" />
-  <add key="port" value="80" />
+  <add key="port" value="82" />
 </ServerSettings>

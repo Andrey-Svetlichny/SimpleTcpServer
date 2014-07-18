@@ -15,9 +15,6 @@ namespace SimpleServer.TcpLayer
         readonly CancellationTokenSource _cancellationTokenSource;
         readonly TcpListener _listener;
 
-        public BinServer Server { get; set; }
-
-
         public TcpServer(string host, int port)
         {
             _cancellationTokenSource = new CancellationTokenSource();
@@ -40,6 +37,8 @@ namespace SimpleServer.TcpLayer
                     // создание потока для обработки запросов одного клиента
                     new Task(() =>
                     {
+                        var server = new Server();
+                        var binServer = new BinServer { Server = server };
                         NetworkStream stream = client.GetStream();
 
                         // Buffer for reading data
@@ -54,7 +53,7 @@ namespace SimpleServer.TcpLayer
                             Array.Copy(buffer, requestBytes, count);
 
                             // Business logic
-                            byte[] responseBytes = Server.Request(requestBytes);
+                            byte[] responseBytes = binServer.Request(requestBytes);
 
                             // Send back a response.
                             stream.Write(responseBytes, 0, responseBytes.Length);

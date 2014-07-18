@@ -21,9 +21,7 @@ namespace TestTcpServer
             var host = serverSettings["host"];
             var port = int.Parse(serverSettings["port"]);
 
-            var server = new Server();
-            var binServer = new BinServer { Server = server };
-            var tcpServer = new TcpServer(host, port) { Server = binServer };
+            var tcpServer = new TcpServer(host, port);
             var tcpClient = new TcpClient(host, port);
             var binClient = new BinClient { Server = tcpClient };
             var client = new Client { Server = binClient };
