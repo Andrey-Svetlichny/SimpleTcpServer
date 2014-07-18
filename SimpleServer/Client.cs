@@ -21,7 +21,7 @@ namespace SimpleServer
     {
         private static readonly ILog Log = LogManager.GetLogger(MethodBase.GetCurrentMethod().DeclaringType);
         public IServer Server { get; set; }
-        public void Start()
+        public void Execute()
         {
             // неправильный пароль
             var responseAuthorization = Server.Authorization(new RequestAuthorization { UserId = "user1", Password = "WRONG" });

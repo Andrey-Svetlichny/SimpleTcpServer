@@ -14,7 +14,7 @@ namespace TestBusinessLogic
 
             var server = new Server();
             var client = new Client { Server = server };
-            client.Start();
+            client.Execute();
 
             Console.WriteLine("Press any key...");
             Console.ReadKey();

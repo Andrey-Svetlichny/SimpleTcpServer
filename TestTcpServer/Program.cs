@@ -30,7 +30,10 @@ namespace TestTcpServer
             tcpServer.Start();
             tcpClient.Start();
 
-            client.Start();
+            client.Execute();
+
+            tcpClient.Stop();
+            tcpServer.Stop();
 
             Console.WriteLine("Press any key...");
             Console.ReadKey();

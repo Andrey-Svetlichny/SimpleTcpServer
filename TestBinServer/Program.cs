@@ -17,7 +17,7 @@ namespace TestBinServer
             var binServer = new BinServer { Server = server };
             var binClient = new BinClient { Server = binServer };
             var client = new Client { Server = binClient };
-            client.Start();
+            client.Execute();
 
             Console.WriteLine("Press any key...");
             Console.ReadKey();
