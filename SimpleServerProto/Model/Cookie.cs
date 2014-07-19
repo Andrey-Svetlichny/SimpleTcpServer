@@ -1,10 +1,12 @@
 ﻿using System;
+using System.Diagnostics;
 using ProtoBuf;
 
 namespace SimpleServerProto
 {
     [ProtoContract]
     [Serializable]
+    [DebuggerDisplay("Name = {Name}; Price = {Price}")]
     public class Cookie
     {
         [ProtoMember(1)]

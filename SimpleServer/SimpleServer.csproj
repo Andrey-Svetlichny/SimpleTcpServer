@@ -54,6 +54,7 @@
     <Compile Include="Model\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Server.cs" />
+    <Compile Include="SmartClient.cs" />
     <Compile Include="TcpLayer\TcpClient.cs" />
     <Compile Include="TcpLayer\TcpServer.cs" />
   </ItemGroup>

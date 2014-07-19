@@ -44,7 +44,7 @@ namespace SimpleServer
 
         public void AddUser(string id, string password)
         {
-            var user = new User { UserId = id, Password = password, Cookies = new Dictionary<Cookie, uint>() };
+            var user = new User { UserId = id, Password = password, Money = 1000, Cookies = new Dictionary<Cookie, uint>() };
             _users.Add(user.UserId, user);
         }
 

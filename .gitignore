@@ -38,3 +38,6 @@ Icon
 *.hgignore
 packages/
 *.user
+bin
+obj
+*.suo
